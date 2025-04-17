@@ -117,6 +117,47 @@
       0%, 100% { transform: scale(1); opacity: 1; }
       50% { transform: scale(1.1); opacity: 0.8; }
     }
+
+
+
+
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  padding: 20px;
+}
+
+.styled-image {
+  border: 4px solid #4a90e2; /* Custom border color */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  transition: all 0.4s ease; /* Smooth transition for hover animation */
+  max-width: 90%;
+  height: auto;
+  animation: fadeInScale 1s ease-out;
+}
+
+.styled-image:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
+}
+
+/* Animation: Fade in and scale */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+    
   </style>
 </head>
 <body class="bg-gradient-to-br from-green-100 via-white to-green-50 text-gray-800 font-sans p-4 min-h-screen">
@@ -125,7 +166,10 @@
     
     
     
-    
+    <div class="image-container">
+  <img src="logo.png" alt="Styled Image" class="styled-image" />
+</div>
+
     
     
     
@@ -360,7 +404,7 @@
     
     
     
-    <p style="background: red; color: white; Font-size: 18px; padding: 5px; border-radius: 5px; ">NOTE: hakikisha umelipia kiasi cha <b>Tsh 5,000</b> na uweke uthibitisho wa muamala hapo chini</p>
+    <p style="background-color: #00008b; color: white; Font-size: 18px; padding: 5px; border-radius: 5px; ">NOTE: hakikisha umelipia kiasi cha <b>Tsh 5,000</b> na uweke uthibitisho wa muamala hapo chini</p>
     
     
     <div class="max-w-xl mx-auto mt-10 bg-white shadow-lg rounded-2xl p-6">
