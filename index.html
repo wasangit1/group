@@ -595,5 +595,44 @@ window.location.href = `https://wa.me/${groupNumber}?text=${encoded}`;
       }, 3000);
     });
   </script>
+
+
+
+
+
+
+
+
+
+      <script>
+  document.addEventListener('keydown', function (e) {
+    // List of common shortcut combinations
+    const forbidden = [
+      e.ctrlKey,
+      e.metaKey,
+      e.altKey,
+      e.key === 'F12',
+      e.key === 'u' || e.key === 'U',
+      e.key === 's' || e.key === 'S',
+      e.key === 'c' || e.key === 'C',
+      e.key === 'i' || e.key === 'I',
+      e.key === 'j' || e.key === 'J',
+      e.key === 'k' || e.key === 'K',
+      e.key === 'v' || e.key === 'V'
+    ];
+
+    if (forbidden.includes(true)) {
+      e.preventDefault();
+      window.location.href = 'https://www.elimufix.com';
+    }
+  });
+
+  // Also block right click
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+    window.location.href = 'https://www.elimufix.com';
+  });
+</script>
+
 </body>
 </html>
